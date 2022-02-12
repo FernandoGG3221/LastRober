@@ -1,30 +1,43 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import "../assets/css/App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 import App from '../App';
+
+let arrData = [];
+
 
 class Lastrober extends Component{
 
-    reload = () => {
-        window.location.reload(true);
+    state = {
+        data: arrData,
+        form: {
+            ind: "",
+            fecha: ""
+        }
     }
 
-    render(){
-        
-        let arrData = [];
 
+    render(){
+
+        
+        
+        let index = 1
         function setRobert(){
-            arrData.push([Date()])
-            alert("Reportando robo, actualizando datos")
+
+            arrData.push([index, Date()])
+
+            alert("Reportando robo")
             if (arrData.length > 0){
                 alert(arrData)
                 console.log(arrData)
             }
+            index += 1
         }
 
         return(
             <div>
                 <input type="submit" value="Reportar Robo" className='Btn' onClick={setRobert} />
-                <input type="submit" value="Recargar datos" className='Btn' onClick={this.reload} />
+
                 <h1>{arrData}</h1>
             </div>
         );
