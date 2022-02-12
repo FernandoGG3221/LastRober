@@ -12,7 +12,6 @@ function SafeDays(dayR, monthR, yearR){
 
     if (currentDate.getTime() < daysRober.getTime()){
         alert("Error!, revisar las fechas")
-        //alert("Last: ", daysRober.getTime)
     }else{
         var safe = curr - last
         daySafe = Math.trunc(safe)
