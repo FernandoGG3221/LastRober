@@ -5,9 +5,9 @@ function Dates(){
     const day = currentDate.getDate()
     const month = currentDate.getMonth() + 1
     const year = currentDate.getFullYear()
-
+    const date = day + "/" + month + "/" + year; 
     return(
-        <h1>Fecha actual: {day}/{month}/{year}</h1>
+        date
     )
 }
 

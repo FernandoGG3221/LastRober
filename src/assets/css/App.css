@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.Btn {
+  background-color: coral;
+  height: 3em;
+  color: aliceblue;
+  font-size: 0.8em;
+  border-radius: 10pt;
+  width: 10em;
+}
