@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Lastrobers extends Component{
+class Lastrober extends Component{
     
     render(){
         
@@ -19,4 +19,4 @@ class Lastrobers extends Component{
 }
 
 
-export default Lastrobers;
+export default Lastrober;

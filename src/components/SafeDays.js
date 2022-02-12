@@ -19,7 +19,7 @@ function SafeDays(dayR, monthR, yearR){
 
     return(
         <div>
-            <h1>Fecha de robo: {dayR}/{monthR}/{yearR}</h1>
+            <h1>Fecha del último robo: {dayR}/{monthR}/{yearR}</h1>
             <h1>Dias seguros: {daySafe}</h1>
         </div>
         
